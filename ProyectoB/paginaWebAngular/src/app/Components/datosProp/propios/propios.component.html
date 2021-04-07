@@ -1,0 +1,42 @@
+<h3 style="text-align: center;">Datos Propios</h3>
+<div id="general">
+    <div id="grafica">
+        <figure class="highcharts-figure">
+            <div id="propios"></div>
+            
+        </figure>
+    
+    </div>
+    <div id="form" class="row">
+        <div class="col s12 m6">
+          <div class="card white">
+            <div class="card-content black-text">
+                <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
+                    <p>Escoge un país</p>
+               
+                        <select class="browser-default" formControlName="estacion">
+                            <option value="" disabled selected>Elige una de las opciones</option>
+                            <option value="Spain">España</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Greece">Grecia</option>
+                        </select>
+                      <br>
+                    <div id="fechas">
+                        <p>Periodo de tiempo</p>
+                        <input type="date" formControlName="fechaInicial" id="fechai" ><br>
+                        <label for="fechai"></label>
+                        <input type="date" formControlName="fechaFinal"id="fechaf" ><br>
+                        <label for="fechaf"></label>
+            
+                    </div><br>
+                    <!-- <button type="submit" class="btn-send">Enviar</button> -->
+                    <button class="btn waves-effect waves-light green" type="submit">
+                        <i class="material-icons ">Enviar</i>
+                      </button>
+                </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</div>

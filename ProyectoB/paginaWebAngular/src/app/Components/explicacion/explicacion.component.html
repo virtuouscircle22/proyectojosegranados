@@ -1,0 +1,63 @@
+<div id="text">
+    <h1>¿Cómo obtenemos los datos? </h1>
+
+    <p>Gracias al estudio de varios alumnos y profesores del instituto <a href="http://www.iespuntadelverde.es/">IES PUNTA DEL VERDE </a>
+    que debido al descontrol de contaminación que existe (como pueden ser la expulsión masiva de gases a la atmósfera y muchos más factores), están dañando a nuestro planeta haciendo 
+    que la calidad del aire que se respira sea cada vez más y más perjudicial para los seres vivos.</p>
+
+    <p>Los datos que ofrecemos son de dos fuentes de datos, una fuente de datos ajena a nosotros proporcionada por la Unión Europea de sus diferentes estaciones que están tomando
+        datos de los contaminantes diariamente. Y la otra fuente de datos es creada por nosotros, es decir, mediante una placa de Arduino y diferentes sensores de medida hemos sido 
+        capaces de proporcionar datos de los contaminantes que están en el aire. Los datos que tomamos con estos dispositivos, son almacenados en una base de datos para poder
+        posteriormente hacer un estudio de la variación de los datos y saber el porqué de esa variación.
+    </p>
+    <div id="hardware">
+        <h2> Hardware utilizado </h2>
+        <img id="nod" src="/assets/img/nodemcu.jpg" alt="nodemcu">
+        <p id="textnodemcu">El hardware que hemos utilizado ha sido una placa NodeMCU que la hemos elegido porque tiene un módulo de Wi-Fi ya integrado, para poder subir los datos a una base de datos 
+            alojada en la nube.    
+        </p> <br>
+        <div id="medidas">
+            <h3>¿Con qué medimos los contaminantes?</h3>
+            
+            <br>
+
+            <p>
+                Los contaminantes se miden mediante unos sensores añadidos a la placa de NodeMCU, estos sensores son:
+            </p>
+            <div class="sensores">
+                <img   src="/assets/img/mq135.jpg" alt="sensor mq-135">
+                <p >
+                    <strong>MQ-135</strong> Hemos elegido este sensor de gas debido a que es capaz de obtener el valor de los contaminantes NH3, NOx, CO2 entre otros más.
+                </p>
+            </div>
+            
+            <br>
+
+
+            <div class="sensores">
+                <p>
+                    <strong>SDS011</strong> Hemos elegido este sensor ya que es sensible al PM10 y al PM2,5
+                </p> 
+                <img  src="/assets/img/pm.jfif" alt="sensor sds011">
+            </div>
+
+            <br>
+
+            <div class="sensores">
+                <p>
+                    <strong>MQ-7</strong> Este sensor es de alta sensibilidad al monóxido de carbono (CO), pero también es sensible al H2.
+                </p>
+                <img src="/assets/img/mq7.jpg" alt="sensor mq-7">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <footer>
+    <div class="page-footer green">
+        <img id="img" src="/assets/img/cofinanciadoEN_derecha.png" alt="cofinanciacion">
+        <p id="footcolor">  &copy; José Granados Rodríguez</p>
+        <img id="img1" src="/assets/img/Proyecto_Erasmusv3.png" alt="LogoFooter">
+    </div>
+
+</footer>  -->
